@@ -1,0 +1,82 @@
+---
+export interface Props {
+	name: string;
+	href: string;
+}
+
+const { href, name } = Astro.props;
+---
+
+
+<nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 mb-12">
+    <div class="flex w-full justify-center items-center xl:w-auto xl:justify-between">
+        <a href="/">
+            <img class="h-32" src="/logo.png" />
+        </a>
+    </div>
+
+    <div class="hidden xl:flex flex-row justify-center items-center">
+        <a class="py-6 px-6 rounded-md hover:bg-green-light hover:text-green-dark" href="/">Startseite</a>
+        <a class="py-6 px-6 rounded-md hover:bg-green-light hover:text-green-dark" href="#behandlungen">Behandlungen</a>
+        <a class="py-6 px-6 rounded-md hover:bg-green-light hover:text-green-dark" href="#kontakt">Kontakt</a>
+    </div>
+
+    <!--
+    <div class="xl:hidden">
+        <input type="checkbox" id="navlist" />
+        <label for="navlist">
+            <div class="space-y-1 open-button cursor-pointer absolute top-10 right-10">
+                <span class="block h-0.5 w-8 bg-black"></span>
+                <span class="block h-0.5 w-6 bg-black"></span>
+                <span class="block h-0.5 w-4 bg-black"></span>
+            </div>
+            <div class="hidden absolute top-10 right-10 close-button cursor-pointer z-50">
+                <span class="block h-0.5 w-8 rotate-45 bg-black"></span>
+                <span class="block h-0.5 w-8 -rotate-45 bg-black"></span>
+            </div>
+            <div class="hidden absolute top-0 left-0 flex-col justify-center items-center h-screen min-h-screen w-full navlisted bg-green-light z-10">
+                <a class="py-6 px-6 w-full text-center rounded-md hover:bg-green-medium hover:text-green-light" href="/">Startseite</a>
+                <a class="py-6 px-6 w-full text-center rounded-md hover:bg-green-medium hover:text-green-light" href="#behandlungen">Behandlungen</a>
+                <a class="py-6 px-6 w-full text-center rounded-md hover:bg-green-medium hover:text-green-light" href="#kontakt">Kontakt</a>
+            </div>
+        </label>
+    </div>
+     -->
+
+    <a class="xl:hidden space-y-1 open-button cursor-pointer absolute top-10 right-10" href="#">
+        <span class="block h-0.5 w-8 bg-black"></span>
+        <span class="block h-0.5 w-6 bg-black"></span>
+        <span class="block h-0.5 w-4 bg-black"></span>
+    </a>
+    <nav id="menu" class="fixed top-0 left-full flex flex-col justify-center items-center h-full w-full navlisted bg-[theme('colors.green-light')] z-10">
+        <a class="py-6 px-6 w-full text-center rounded-md hover:bg-green-medium hover:text-green-light" href="/">Startseite</a>
+        <a class="py-6 px-6 w-full text-center rounded-md hover:bg-green-medium hover:text-green-light" href="#behandlungen">Behandlungen</a>
+        <a class="py-6 px-6 w-full text-center rounded-md hover:bg-green-medium hover:text-green-light" href="#kontakt">Kontakt</a>
+    </nav>
+</nav>
+
+<style>
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    :checked + label .navlisted {
+        display: flex;
+    }
+
+    :checked + label .close-button {
+        display: block;
+    }
+
+    :checked + label .open-button {
+        display: none;
+    }
+
+    #menu {
+        transition: left 300ms 300ms;
+    }
+    a:focus + #menu {
+        left:0;
+        transition-delay:0;
+    }
+</style>

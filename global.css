@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "AshemoreNormRegular";
+    src:url(/fonts/AshemoreNormRegular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BrittanySignature-Regular";
+    src:url(/fonts/BrittanySignature-Regular.otf) format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.logo-text-first {
+    text-transform: uppercase;
+    color: theme('colors.green-medium');
+    font-family: 'AshemoreNormRegular', sans-serif;
+}
+.logo-text-second {
+    text-transform: lowercase;
+    color: theme('colors.green-dark');
+    font-family: 'BrittanySignature-Regular', serif;
+}
+
+:hover {
+    transition: all .3s ease-in-out;
+}

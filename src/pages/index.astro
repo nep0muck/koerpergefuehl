@@ -1,81 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Kontakt from '../components/Kontakt.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
+<Layout title="Willkommen bei Körpergefühl">
+	<Nav />
+	<Hero />
+	<main class="max-w-screen-xl mx-auto p-6">
+		<h2 class="text-xl font-bold pb-9 text-center">Was kann <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> für mich tun?</h2>
+		<ul id="behandlungen" role="list" class="xl:grid xl:grid-cols-3">
 			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				href="/"
+				title="Physiotherapie"
+				body="Wir bieten im Bereich Physiotherapie die klassische Krankengymnastik, Manuelle Lymphdrainage und die klassische Massage Therapie an. Zusätzlich zur normalen Physiotherapie bieten wir dir auch die Möglichkeit, ergänzende Heilmittel, wie zum Beispiel den Schlingentisch oder eine Rotlicht Therapie in Anspruch zu nehmen."
 			/>
 			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				href="/"
+				title="Heilpraktik"
+				body="Im Bereich der Heilpraktik können wir deinen Körper mit chiropraktischen Techniken behandeln. Außerdem bieten wir Akutbehandlungen ohne die Verordnung eines Arztes an."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				href="/"
+				title="Private Leistungen"
+				body="Im Bereich der privaten Zusatzleistungen kannst du dich bei Körpergefühl mit Massagen verwöhnen lassen, dir mit Taping schmerzen nehmen lassen und deine Muskeln bei einer Therapie mit der Emmett Technique entspannen lassen."
 			/>
 		</ul>
 	</main>
+	<Kontakt id="kontakt" />
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
+	.logo-text-first {
+		text-transform: uppercase;
+		color: theme('colors.green-medium');
+		font-family: 'AshemoreNormRegular', sans-serif;
 	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
+	.logo-text-second {
+		text-transform: lowercase;
+		color: theme('colors.green-dark');
+		font-family: 'BrittanySignature-Regular', serif;
 	}
 </style>
