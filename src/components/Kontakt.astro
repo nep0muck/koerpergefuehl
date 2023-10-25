@@ -1,4 +1,8 @@
 ---
+import { getImage } from 'astro:assets';
+import mapImage from '../../src/img/praxis-map-1280x384.png';
+const optimizedBackgroundImage = await getImage({ src: mapImage });
+
 export interface Props {
 	title: string;
 	body: string;
@@ -10,26 +14,31 @@ const { href, title, body } = Astro.props;
 
 <div id="kontakt" class="flex items-center justify-center mb-12">
     <div class="max-w-screen-xl w-screen mx-auto p-6 text-center">
-        <h2 class="text-xl font-bold pb-9">Wie komme ich zu <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span>?</h1>
-        <div class="h-96 w-full bg-[url('/praxis-500x375.png')] xl:bg-[url('/praxis-1280x700.png')] bg-cover bg-center bg-no-repeat" />
-        <div class="pb-3 pt-6">
-            <h3 class="text-lg pb-3 font-bold">Adresse</h3>
-            <address class="pb-3">
-                Hemelinger Heerstr. 50<br />
-                28309 Bremen<br />
-                Eingang Bultstr. 1
-            </address>
-            <p class="pb-3">
-                <a class="font-bold underline text-[theme('colors.green-dark')] hover:text-[theme('colors.green-medium')]" href="https://goo.gl/maps/34SZ1fAbZTRT1jdY8">
-                    Route zur Praxis über Google Maps
-                </a>
-            </p>
-            <p class="pb-3">Telefon: <a class="font-bold underline text-[theme('colors.green-dark')] hover:text-[theme('colors.green-medium')]" href="tel:+4942198964633">+49 (0)421 - 98 96 46 33</a></p>
-        </div>
-        <div class="pb-3">
-            <h3 class="text-lg pb-3 font-bold">Öffnungszeiten</h3>
-            <p>Montag bis Freitag</p>
-            <p>08:00-17:00 Uhr</p>
+        <h2 class="text-2xl font-bold pb-9">Wie komme ich zu <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span>?</h1>
+        <div class="rounded-md h-96 w-full bg-cover bg-center bg-no-repeat mb-9" style={`background-image: url('${optimizedBackgroundImage.src}')`} />
+        <div class="xl:grid xl:grid-cols-3 xl:gap-6">
+            <div class="pb-6">
+                <h3 class="text-lg pb-3 font-bold">Adresse</h3>
+                <address class="pb-3 not-italic">
+                    Hemelinger Heerstr. 50<br />
+                    28309 Bremen<br />
+                    Eingang Bultstr. 1
+                </address>
+                <p>
+                    <a class="underline hover:text-[theme('colors.green-medium')]" href="https://goo.gl/maps/34SZ1fAbZTRT1jdY8">
+                        Route zur Praxis über Google Maps
+                    </a>
+                </p>
+            </div>
+            <div class="pb-6">
+                <h3 class="text-lg pb-3 font-bold">Telefon</h3>
+                <p><a class="underline hover:text-[theme('colors.green-medium')]" href="tel:+4942198964633">+49 (0)421 - 98 96 46 33</a></p>
+            </div>
+            <div>
+                <h3 class="text-lg pb-3 font-bold">Öffnungszeiten</h3>
+                <p>Montag bis Freitag</p>
+                <p>08:00-17:00 Uhr</p>
+            </div>
         </div>
     </div>
 </div>

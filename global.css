@@ -1,3 +1,7 @@
+::selection {
+    background: theme('colors.green-light');
+}
+
 @font-face {
     font-family: "AshemoreNormRegular";
     src:url(/fonts/AshemoreNormRegular.otf) format("opentype");

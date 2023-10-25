@@ -4,43 +4,58 @@ import Card from '../components/Card.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import Kontakt from '../components/Kontakt.astro';
+import Footer from '../components/Footer.astro';
+import Image from '../components/Image.astro';
+
+import image01 from '../../src/img/Physiopraxis_01.jpg';
+import image02 from '../../src/img/Physiopraxis_02.jpg';
+import image04 from '../../src/img/Physiopraxis_04.jpg';
 ---
 
 <Layout title="Willkommen bei Körpergefühl">
 	<Nav />
 	<Hero />
-	<main class="max-w-screen-xl mx-auto p-6">
-		<h2 class="text-xl font-bold pb-9 text-center">Was kann <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> für mich tun?</h2>
-		<ul id="behandlungen" role="list" class="xl:grid xl:grid-cols-3">
+	<main class="max-w-screen-xl mx-auto p-6 mb-12">
+		<h2 class="text-2xl font-bold pb-9 text-center">Was kann <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> für mich tun?</h2>
+		<ul id="behandlungen" role="list" class="">
 			<Card
 				href="/"
-				title="Physiotherapie"
-				body="Wir bieten im Bereich Physiotherapie die klassische Krankengymnastik, Manuelle Lymphdrainage und die klassische Massage Therapie an. Zusätzlich zur normalen Physiotherapie bieten wir dir auch die Möglichkeit, ergänzende Heilmittel, wie zum Beispiel den Schlingentisch oder eine Rotlicht Therapie in Anspruch zu nehmen."
+				title="Physiotherapie für alle Altersgruppen"
+				body="Bei uns geht es um dich und dein Wohlbefinden. Egal, in welcher Altersgruppe du dich befindest, unsere Physiotherapie deckt alles ab. Du kannst von klassischer Krankengymnastik, Manueller Lymphdrainage und klassischer Massage-Therapie profitieren. Doch das ist noch nicht alles. Zusätzlich zur herkömmlichen Physiotherapie bieten wir dir innovative Behandlungsmethoden wie den Schlingentisch und Rotlichttherapie an. Körpergefühl in Bremen kümmert sich um deine Gesundheit und dein Wohlbefinden, ganz gleich, wie alt du bist."
 			/>
 			<Card
 				href="/"
-				title="Heilpraktik"
-				body="Im Bereich der Heilpraktik können wir deinen Körper mit chiropraktischen Techniken behandeln. Außerdem bieten wir Akutbehandlungen ohne die Verordnung eines Arztes an."
+				title="Heilpraktik für Dich"
+				body="Wenn es um Heilpraktik geht, sind wir für dich da. Wir verwenden chiropraktische Techniken, um deinem Körper die Behandlung zu geben, die er braucht. Und das Beste? Du kannst Akutbehandlungen bei uns erhalten, ohne dass ein Arzt dir eine Verordnung ausstellen muss. Deine Gesundheit ist unser Anliegen!"
 			/>
 			<Card
 				href="/"
-				title="Private Leistungen"
-				body="Im Bereich der privaten Zusatzleistungen kannst du dich bei Körpergefühl mit Massagen verwöhnen lassen, dir mit Taping schmerzen nehmen lassen und deine Muskeln bei einer Therapie mit der Emmett Technique entspannen lassen."
+				title="Private Zusatzleistungen"
+				body="Du verdienst eine Extraportion Wohlbefinden. Bei uns kannst du dich verwöhnen lassen, sei es mit entspannenden Massagen, schmerzlinderndem Taping oder einer Muskelentspannung durch die Emmett Technique. Unser Ziel ist es, dir das Beste zu bieten. Gönn dir diese zusätzlichen Leistungen und fühl' dich großartig!"
 			/>
 		</ul>
 	</main>
+	<section class="max-w-screen-xl mx-auto p-6 mb-12">
+		<h2 class="text-2xl font-bold pb-9 text-center">Wie sieht es bei <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> aus?</h2>
+		<ul id="behandlungen" role="list" class="xl:grid xl:grid-cols-3 xl:gap-6">
+			<Image
+				src={image01}
+				title="So heißen wir dich willkommen"
+			/>
+			<Image
+				src={image04}
+				title="Wohlfühlatmosphäre für deine Behandlung"
+			/>
+			<Image
+				src={image02}
+				title="Hier werden unsere Kurse abgehalten"
+			/>
+		</ul>
+	</section>
 	<Kontakt id="kontakt" />
+	<Footer id="footer" />
 </Layout>
 
 <style>
-	.logo-text-first {
-		text-transform: uppercase;
-		color: theme('colors.green-medium');
-		font-family: 'AshemoreNormRegular', sans-serif;
-	}
-	.logo-text-second {
-		text-transform: lowercase;
-		color: theme('colors.green-dark');
-		font-family: 'BrittanySignature-Regular', serif;
-	}
+
 </style>
