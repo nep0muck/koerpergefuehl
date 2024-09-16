@@ -1,17 +1,19 @@
 ---
 export interface Props {
-	title: string;
-	body: string;
-	href: string;
+	title?: string;
+	body?: string;
+	href?: string;
+    id: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, id } = Astro.props;
 ---
 
-<div id="footer" class="flex items-center justify-center bg-[theme('colors.green-light')] border-t border-[theme('colors.green-medium')]">
+<div id={id} class="flex items-center justify-center bg-[theme('colors.green-light')] border-t border-[theme('colors.green-medium')]">
     <div class="max-w-screen-xl w-screen mx-auto text-center p-6">
-        <div class="xl:flex flex-col justify-center items-center mt-6 mb-9">
+        <div class="xl:flex flex-row justify-center items-center mt-6 mb-9">
             <a class="m-6 rounded-md underline hover:no-underline" href="/impressum">Impressum</a>
+            <a class="m-6 rounded-md underline hover:no-underline" href="/datenschutz">Datenschutz</a>
         </div>
         <p class="text-sm pb-6">(C) seit 2023 - <a class="underline hover:no-underline" href="/">Körpergefühl</a></p>
     </div>

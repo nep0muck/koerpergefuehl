@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/Nav.astro';
-import Kontakt from '../components/Kontakt.astro';
 import Footer from '../components/Footer.astro'
 ---
 
@@ -10,8 +9,9 @@ import Footer from '../components/Footer.astro'
 	<main class="max-w-screen-xl mx-auto p-6 mb-12">
 		<h1 class="text-2xl font-bold mb-6">Impressum</h1>
 		<h2 class="text-lg font-bold pb-3">Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
-		<p class="pb-6">Cathrin Eichler<br />
-			Physiotherapie K&ouml;rpergef&uuml;hl<br />
+		<p class="pb-6">
+			<b>Physiotherapie K&ouml;rpergef&uuml;hl</b><br />
+			Cathrin Eichler<br />
 			Bultstr. 1<br />
 			28309 Bremen</p>
 		<h2 class="text-lg font-bold pb-3">Kontakt</h2>
@@ -25,7 +25,6 @@ import Footer from '../components/Footer.astro'
 		teilzunehmen.</p>
 		<p class="pb-6">Quelle: <a class="underline text-[theme('colors.green-dark')] hover:text-[theme('colors.green-medium')]" href="https://www.e-recht24.de">eRecht24</a></p>
 	</main>
-	<Kontakt id="kontakt" />
 	<Footer id="footer" />
 </Layout>
 
