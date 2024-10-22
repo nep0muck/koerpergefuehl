@@ -78,7 +78,6 @@ Ihre personenbezogenen Daten werden automatisch 4 Wochen nach dem Ende der Verbi
 
 ## 3. Welche Datenschutzrechte haben Sie?
 
-
 Soweit Ihre personenbezogenen Daten verarbeitet werden, stehen Ihnen im Sinne der DSGVO folgende Rechte zu:
 
 **Art. 15 DSGVO: Auskunftsrecht der betroffenen Person**
