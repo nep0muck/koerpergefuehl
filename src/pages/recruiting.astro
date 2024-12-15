@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/BubbleCard.astro';
+import Kontakt from '../components/Kontakt.astro';
+
+import * as job from "../content/karriere/Stellenausschreibung.md"
+import { getEntries } from 'astro:content';
+
+//const jobs = Object.values(await import.meta.glob('../content/karriere/*.md', { eager: true }));
+
+const benefitsJob = await getEntries(job.frontmatter.benefits);
+
+---
+
+<Layout title="Recruiting">
+	<main class="max-w-screen-xl mx-auto p-6 mb-12 grid grid-cols-2 gap-6">
+    <div class="col-span-2">
+      <h1 class="text-2xl font-bold pb-9 text-center">Werde Teil des <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> Teams!</h1>
+      <h2 class="text-xl text-center">Du bist <span class="font-bold italic">Physiotherapeut/In?</span></h2>
+      <p class="text-center">Dann bewirb dich bei uns!</p>
+      <p>Hast du Lust in einer modernen Praxis, die vor kurzem erst ihre Türen geöffnet hat, zu arbeiten?
+        Wir suchen nach begeisterten Physiotherapeut*innen in der Praxis Körpergefühl in Bremen-Hemelingen
+        Die Praxis für Physiotherapie Körpergefühl ist eine junge Praxis mit einem einzigartigen Wohlfühlcharakter, eingerichtet mit viel Liebe zum Detail. Es gibt drei mit Licht geflutete, großzügige Behandlungsräume. Ein Bewegungsraum bietet Platz für kleinere Gruppen oder einer aktiven Therapiegestaltung.  
+        Für uns ist das oberste Ziel, dass sich Therapeuten und Patient*innen gleichermaßen bei uns wohlfühlen. Unser Ziel ist es einen positiven Unterschied im Leben der Patient*innen zu machen. Qualität und Ganzheitlichkeit zählen zu unseren wichtigsten Ansprüchen. 
+        Wir schätzen den Dialog sowohl im Team als auch mit unseren geschätzten Patient*innen auf Augenhöhe und sind stets offen für innovative Ideen, denn das Wir-Gefühl ist bei uns von größter Bedeutung. 
+        Du fragst dich bestimmt nun, was bieten wir weiteren Rahmenbedingungen….?</p>
+    </div>
+    <div class="p-9 bg-[theme('colors.green-light')] rounded-lg">
+      <h2 class="text-2xl font-bold mb-3 logo-text-second">Das erwartet Dich:</h2>
+      <ul class="list-disc pl-6">
+        <li>Moderne und liebevoll eingerichtete Praxis</li>
+        <li>Besetzte Rezeption zur Unterstützung der Therapeuten</li>
+        <li>Familiäre Atmosphäre mit Praxishund</li>
+        <li>Kommunikation auf Augenhöhe unter den Kollegen und mit unseren Patienten</li>
+      </ul>
+      <ul>
+        <!-- {benefitsJob.map(job => <li>{job.frontmatter.benefits}</li>)} -->
+         {benefitsJob}
+      </ul>
+    </div>
+		<div class="p-9 bg-[theme('colors.green-light')] rounded-lg">
+      <h2 class="text-2xl font-bold mb-3 logo-text-second">Benefits</h2>
+      <ul class="list-disc pl-6">
+        <li>30 Tage Urlaub im Jahr</li>
+        <li>Attraktives Gehalt nach Qualifikation und Engagement</li>
+        <li>Finanzielle Unterstützung bei Fortbildungen</li>
+        <li>Betriebliche Altersvorsorge</li>
+        <li>Regelmäßige Teamsitzungen</li>
+        <li>Digitale Dokumentation mit iPad</li>
+      </ul>
+    </div>
+	</main>
+	<Kontakt id="kontakt" />
+</Layout>

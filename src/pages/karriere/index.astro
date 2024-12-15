@@ -1,0 +1,18 @@
+---
+import Layout from '../../layouts/ContentLayout.astro';
+
+import { getCollection } from 'astro:content';
+const posts = await getCollection('karriere');
+
+---
+
+<Layout title="Karriere">
+
+    <h1 class="text-2xl font-bold pb-6">Du willst Teil des <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> Teams werden?</h1>
+    <ul>
+        {posts.map(post => (
+          <li><a href={`/karriere/${post.id}`} class="text-[theme('colors.green-medium')] hover:text-[theme('colors.green-dark')] hover:underline">{post.data.title}</a></li>
+        ))}
+      </ul>
+
+</Layout>

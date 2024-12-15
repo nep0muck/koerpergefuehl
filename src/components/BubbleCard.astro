@@ -1,0 +1,21 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<div class="rounded-md px-6 py-6 mb-6 bg-[theme('colors.green-light')]">
+    <h2 class="text-lg font-bold text-center xl:text-left text-[theme('colors.green-dark')] mb-3">
+        {title}
+    </h2>
+    <p class="px-6 py-3 xl:p-0">
+        {body}
+    </p>
+</div>
+<style>
+
+</style>

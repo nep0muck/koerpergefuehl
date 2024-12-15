@@ -1,12 +1,13 @@
 ---
-
+import { Image } from 'astro:assets';
+import Logo from '../img/logo.png';
 ---
 
 
 <nav class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6 mb-12">
-    <div class="flex w-full justify-center items-center xl:w-auto xl:justify-between">
+    <div class="flex w-full justify-center items-center xl:w-auto xl:justify-between max-h-32">
         <a href="/">
-            <img class="h-32" src="/logo.png" />
+            <Image src={Logo} alt="Körpergefühl Logo" height="128px" />
         </a>
     </div>
 

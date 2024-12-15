@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/BubbleCard.astro';
+import Kontakt from '../components/Kontakt.astro';
+
+const { frontmatter } = Astro.props;
+
+const { title, description, benefits, expecations } = frontmatter;
+
+---
+
+<Layout title="Recruiting">
+	<main class="max-w-screen-xl mx-auto p-6 mb-12 grid grid-cols-2 gap-6">
+    <div class="col-span-2">
+        <h1 class="text-2xl font-bold pb-9 text-center">Werde Teil des <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> Teams!</h1>
+        <h2 class="text-xl text-center">Du bist <span class="font-bold italic">Physiotherapeut/In?</span></h2>
+        <p class="text-center">Dann bewirb dich bei uns!</p>
+        <slot />
+    </div>
+    <div class="p-9 bg-[theme('colors.green-light')] rounded-lg">
+      <h2 class="text-2xl font-bold mb-3 logo-text-second">Das erwartet Dich:</h2>
+      <ul class="list-disc pl-6">
+        <li>Moderne und liebevoll eingerichtete Praxis</li>
+        <li>Besetzte Rezeption zur Unterstützung der Therapeuten</li>
+        <li>Familiäre Atmosphäre mit Praxishund</li>
+        <li>Kommunikation auf Augenhöhe unter den Kollegen und mit unseren Patienten</li>
+      </ul>
+    </div>
+		<div class="p-9 bg-[theme('colors.green-light')] rounded-lg">
+      <h2 class="text-2xl font-bold mb-3 logo-text-second">Benefits</h2>
+      <ul class="list-disc pl-6">
+        <li>30 Tage Urlaub im Jahr</li>
+        <li>Attraktives Gehalt nach Qualifikation und Engagement</li>
+        <li>Finanzielle Unterstützung bei Fortbildungen</li>
+        <li>Betriebliche Altersvorsorge</li>
+        <li>Regelmäßige Teamsitzungen</li>
+        <li>Digitale Dokumentation mit iPad</li>
+      </ul>
+    </div>
+	</main>
+	<Kontakt id="kontakt" />
+</Layout>

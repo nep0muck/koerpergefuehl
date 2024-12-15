@@ -1,8 +1,11 @@
 ---
+import { getImage } from 'astro:assets';
+import LogoHalf from '../img/logo-hero-half.png'
 
+const optimizedBackgroundImage = await getImage({ src: LogoHalf })
 ---
 
-<div class="flex items-center justify-center bg-[url('/logo-hero-half.png')] bg-contain bg-no-repeat bg-right w-full h-96 mb-12">
+<div class="flex items-center justify-center bg-contain bg-no-repeat bg-right w-full h-96 mb-12" style={`background-image: url('${optimizedBackgroundImage.src}')`}>
     <div class="max-w-screen-xl mx-auto p-6 text-center">
         <h1 class="text-2xl font-bold pb-6">Willkommen bei <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span></h1>
         <h2 class="text-xl pb-9">Deiner Physiotherapie Praxis in Bremen-Hemelingen.</h2>

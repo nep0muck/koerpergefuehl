@@ -1,3 +1,7 @@
+---
+title: 'Datenschutzhinweise gem. EU-Datenschutzgrundverordnung'
+---
+
 # Datenschutzhinweise gem. EU-Datenschutzgrundverordnung
 
 Im Folgenden möchten wir dich darüber informieren, wie in unserer Praxis deine personenbezogenen Daten verarbeitet werden und welche Rechte Dir nach den Datenschutzbestimmungen zustehen.
