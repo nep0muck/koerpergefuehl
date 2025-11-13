@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Zitat from '../components/Zitat.astro';
+import Leistungen from '../components/Leistungen.astro';
 import Nav from '../components/Nav.astro';
 import Hero from '../components/Hero.astro';
 import Kontakt from '../components/Kontakt.astro';
@@ -13,26 +15,48 @@ import image04 from '../../src/img/Physiopraxis_04.jpg';
 ---
 
 <Layout title="Willkommen bei Körpergefühl">
-	<Hero />
-	<main class="max-w-screen-xl mx-auto p-6 mb-12">
-		<h2 class="text-2xl font-bold pb-9 text-center">Was kann <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> für mich tun?</h2>
-		<ul id="behandlungen" role="list" class="">
-			<Card
-				href="/"
-				title="Physiotherapie für alle Altersgruppen"
-				body="Bei uns geht es um dich und dein Wohlbefinden. Egal, in welcher Altersgruppe du dich befindest, unsere Physiotherapie deckt alles ab. Du kannst von klassischer Krankengymnastik, Manueller Lymphdrainage und klassischer Massage-Therapie profitieren. Doch das ist noch nicht alles. Zusätzlich zur herkömmlichen Physiotherapie bieten wir dir ergänzende Behandlungsmethoden wie den Schlingentisch und Rotlichttherapie an. Körpergefühl in Bremen kümmert sich um deine Gesundheit und dein Wohlbefinden, ganz gleich, wie alt du bist."
+	<main class="max-w-3xl mx-auto mb-12">
+		<div class="mb-12">
+			<h2 class="text-2xl font-bold pb-9 text-center">Wer ist <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span>?</h2>
+			<p class="mb-3">
+				In unseren hellen, großzügigen Räumen erwartet Dich ein freundliches Team, das mit Fachwissen, Empathie und echter Freude an der Arbeit für Deine körperliche Gesundheit da ist.
+			</p>
+			<Zitat 
+				body="Deine Praxis mit Herz und Kompetenz."
 			/>
-			<Card
-				href="/"
-				title="Heilpraktik für Dich"
-				body="Wenn es um Heilpraktik geht, sind wir für dich da. Wir verwenden chiropraktische Techniken, um deinem Körper die Behandlung zu geben, die er braucht. Und das Beste? Du kannst Akutbehandlungen bei uns erhalten, ohne dass ein Arzt dir eine Verordnung ausstellen muss. Deine Gesundheit ist unser Anliegen!"
+			<p class="mb-3">
+				Seit August 2023 sind wir in Hemelingen für Dich da und begleiten Dich auf Deinem Weg zu mehr Gesundheit und Mobilität.
+			</p>
+			<p class="mb-3">
+				Bei uns stehst Du im Mittelpunkt: Mit moderner Physiotherapie unterstützen wir Dich gezielt – und ergänzen Deine Behandlung bei Bedarf durch Heilpraktik-Leistungen, um Deinen Genesungsprozess umfassend zu fördern.
+			</p>
+		</div>
+		<div class="">
+			<h2 class="text-2xl font-bold pb-9 text-center">Was kann <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> für mich tun?</h2>
+			<ul id="behandlungen" role="list" class="">
+				<Card
+					href="/"
+					title="Physiotherapie für alle Altersgruppen"
+					body="Bei uns geht es um dich und dein Wohlbefinden. Egal, in welcher Altersgruppe du dich befindest, unsere Physiotherapie deckt alles ab. Du kannst von klassischer Krankengymnastik, Manueller Lymphdrainage und klassischer Massage-Therapie profitieren. Doch das ist noch nicht alles. Zusätzlich zur herkömmlichen Physiotherapie bieten wir dir ergänzende Behandlungsmethoden wie den Schlingentisch und Rotlichttherapie an. Körpergefühl in Bremen kümmert sich um deine Gesundheit und dein Wohlbefinden, ganz gleich, wie alt du bist."
+				/>
+				<Card
+					href="/"
+					title="Heilpraktik für Dich"
+					body="Wenn es um Heilpraktik geht, sind wir für dich da. Wir verwenden chiropraktische Techniken, um deinem Körper die Behandlung zu geben, die er braucht. Und das Beste? Du kannst Akutbehandlungen bei uns erhalten, ohne dass ein Arzt dir eine Verordnung ausstellen muss. Deine Gesundheit ist unser Anliegen!"
+				/>
+				<Card
+					href="/"
+					title="Private Zusatzleistungen"
+					body="Du verdienst eine Extraportion Wohlbefinden. Bei uns kannst du dich verwöhnen lassen, sei es mit entspannenden Massagen, schmerzlinderndem Taping oder einer Muskelentspannung durch die Emmett Technique. Unser Ziel ist es, dir das Beste zu bieten. Gönn dir diese zusätzlichen Leistungen und fühl' dich großartig!"
+				/>
+			</ul>
+						<Zitat
+				body="Wir nehmen uns Zeit für Dich – damit Bewegung wieder leicht und schmerzarm möglich ist."
 			/>
-			<Card
-				href="/"
-				title="Private Zusatzleistungen"
-				body="Du verdienst eine Extraportion Wohlbefinden. Bei uns kannst du dich verwöhnen lassen, sei es mit entspannenden Massagen, schmerzlinderndem Taping oder einer Muskelentspannung durch die Emmett Technique. Unser Ziel ist es, dir das Beste zu bieten. Gönn dir diese zusätzlichen Leistungen und fühl' dich großartig!"
-			/>
-		</ul>
+			<p>
+				Wir können mit allen gesetzlichen Krankenkassen, der Bundeswehr und der Berufsgenossenschaft (BG) abrechnen. Behandlungen privat Versicherter erfolgen über eine private Rechnung, die Du bei Deiner Versicherung einreichen kannst. Heilpraktische Leistungen werden privat abgerechnet; teilweise übernehmen private oder Zusatzversicherungen diese Kosten.
+			</p>
+		</div>
 	</main>
 	<section class="max-w-screen-xl mx-auto p-6 mb-12">
 		<h2 class="text-2xl font-bold pb-9 text-center">Wie sieht es bei <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> aus?</h2>
@@ -51,7 +75,6 @@ import image04 from '../../src/img/Physiopraxis_04.jpg';
 			/>
 		</ul>
 	</section>
-	<Kontakt id="kontakt" />
 </Layout>
 
 <style>

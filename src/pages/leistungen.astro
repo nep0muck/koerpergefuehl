@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import Leistungen from '../components/Leistungen.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import Kontakt from '../components/Kontakt.astro';
+import Footer from '../components/Footer.astro';
+import Image from '../components/ImageComponent.astro';
+
+---
+
+<Layout title="Behandlungen bei Körpergefühl">
+	<main class="max-w-screen-xl mx-auto p-6 mb-12">
+		<h2 class="text-2xl font-bold pb-9 text-center">Was kann <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> für mich tun?</h2>
+		<ul id="behandlungen" role="list" class="">
+			<Card
+				href="/"
+				title="Physiotherapie für alle Altersgruppen"
+				body="Bei uns geht es um dich und dein Wohlbefinden. Egal, in welcher Altersgruppe du dich befindest, unsere Physiotherapie deckt alles ab. Du kannst von klassischer Krankengymnastik, Manueller Lymphdrainage und klassischer Massage-Therapie profitieren. Doch das ist noch nicht alles. Zusätzlich zur herkömmlichen Physiotherapie bieten wir dir ergänzende Behandlungsmethoden wie den Schlingentisch und Rotlichttherapie an. Körpergefühl in Bremen kümmert sich um deine Gesundheit und dein Wohlbefinden, ganz gleich, wie alt du bist."
+			/>
+			<Card
+				href="/"
+				title="Heilpraktik für Dich"
+				body="Wenn es um Heilpraktik geht, sind wir für dich da. Wir verwenden chiropraktische Techniken, um deinem Körper die Behandlung zu geben, die er braucht. Und das Beste? Du kannst Akutbehandlungen bei uns erhalten, ohne dass ein Arzt dir eine Verordnung ausstellen muss. Deine Gesundheit ist unser Anliegen!"
+			/>
+			<Card
+				href="/"
+				title="Private Zusatzleistungen"
+				body="Du verdienst eine Extraportion Wohlbefinden. Bei uns kannst du dich verwöhnen lassen, sei es mit entspannenden Massagen, schmerzlinderndem Taping oder einer Muskelentspannung durch die Emmett Technique. Unser Ziel ist es, dir das Beste zu bieten. Gönn dir diese zusätzlichen Leistungen und fühl' dich großartig!"
+			/>
+		</ul>
+
+<h2 class="text-2xl font-bold pb-9 text-center">Welche Leistungen bietet <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span>?</h2>
+<h3 class="text-xl font-bold pb-9">Mit ärztlicher Verordnung für gesetzliche Versicherte/ Privatversicherte</h3>
+<div class="border-2 rounded-md border-[theme('colors.green-medium')] bg-[theme('colors.green-light')] text-[theme('colors.green-dark')] text-lg px-6 pt-9 mb-9">
+    <Leistungen
+    title="Manuelle Lymphdrainage (MLD)"
+    time="30, 45 oder 60 min"
+    />
+    <Leistungen
+    title="Allgemeine Physiotherapie (KG)"
+    time="15-20 min"
+    />
+    <Leistungen
+    title="Krankengymnastik auf neurophysiologischer Basis (KG-ZNS)"
+    time="25-30 min"
+    />
+</div>
+
+<h3 class="text-xl font-bold pb-9">Private Leistungen</h3>
+<div class="border-2 rounded-md border-[theme('colors.green-medium')] bg-[theme('colors.green-light')] text-[theme('colors.green-dark')] text-lg px-6 pt-9 mb-9">
+    <Leistungen
+        title="Massage"
+        time="20 min auf Anfrage auch längere Einheiten möglich"
+    />
+    <Leistungen
+        title="Kinesiotape"
+        time="möglich im Anschluss an eine Therapieeinheit oder separat"
+    />
+</div>
+
+
+<div class="border-2 rounded-md border-[theme('colors.green-medium')] text-[theme('colors.green-dark')] text-lg mb-9">
+    <div class="rounded-t-md bg-[theme('colors.green-light')] border-b-2 border-b-[theme('colors.green-medium')] p-6">
+        Allgemeine Physiotherapie (KG)
+    </div>
+    <div class="p-6">
+        15-20 min
+    </div>
+</div>
+
+
+	</main>
+</Layout>
+
+<style>
+
+</style>

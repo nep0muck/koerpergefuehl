@@ -1,0 +1,21 @@
+---
+export interface Props {
+	title: string;
+	body: string;
+	time: string
+	href: string;
+}
+
+const { href, title, body, time } = Astro.props;
+---
+
+<div class="grid md:grid-cols-2 grid-cols-1 mb-6">
+    <span class="font-bold mb-3">{title}</span>
+    <span class="">{time}</span>
+	<hr class="border-[theme('colors.green-medium')] md:col-span-2 md:mt-6 md:mb-3 mt-3 mb-0" />
+</div>
+
+
+<style>
+
+</style>

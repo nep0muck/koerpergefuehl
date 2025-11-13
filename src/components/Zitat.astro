@@ -1,0 +1,15 @@
+---
+export interface Props {
+	body: string;
+}
+
+const { body } = Astro.props;
+---
+
+<div class="max-w-sm float-right mx-6 my-6 relative">
+	<p class="border-l-4 border-[theme('colors.green-medium')] px-6 italic text-2xl -mr-24">{body}</p>
+	<span class="text-7xl text-[theme('colors.green-medium')] absolute -top-4 -right-28">"</span>
+</div>
+<style>
+
+</style>

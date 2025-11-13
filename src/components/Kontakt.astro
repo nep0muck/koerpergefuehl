@@ -17,7 +17,12 @@ const { href, title, body, id } = Astro.props;
     <div class="max-w-screen-xl w-screen mx-auto p-6 text-center">
         <h2 class="text-2xl font-bold pb-9">Wie komme ich zu <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span>?</h1>
         <div class="rounded-md h-96 w-full bg-cover bg-center bg-no-repeat mb-9" style={`background-image: url('${optimizedBackgroundImage.src}')`} />
-        <div class="xl:grid xl:grid-cols-3 xl:gap-6">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-6 max-w-3xl mx-auto">
+            <div class="col-span-3 pb-6">
+                <p class="text-lg">
+                    Öffentliche Parkplätze findest Du direkt an der Straße, und die Bushaltestelle <strong>Brünsweg</strong> liegt nur 50 m entfernt – so erreichst Du uns bequem mit dem Auto oder den öffentlichen Verkehrsmitteln.
+                </p>
+            </div>
             <div class="pb-6">
                 <h3 class="text-lg pb-3 font-bold">Adresse</h3>
                 <address class="pb-3 not-italic">

@@ -1,5 +1,8 @@
 ---
 import Nav from "../components/Nav.astro"
+import Hero from "../components/Hero.astro";
+import About from '../components/About.astro';
+import Kontakt from "../components/Kontakt.astro";
 import Footer from "../components/Footer.astro"
 
 
@@ -22,9 +25,20 @@ import '../../global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="text-[theme('colors.green-dark')] accent-[theme('colors.green-medium')]">
+	<body class="text-[theme('colors.green-dark')] accent-[theme('colors.green-medium')] ">
 		<Nav />
-		<slot />
+		<div class="mb-11">
+			<Hero />
+		</div>
+		<div class="max-w-screen-xl mx-auto mb-11 px-12 md:px-0">
+			<slot />
+		</div>
+		<div class="mb-11">
+			<About />
+		</div>
+		<div class="mb-11">
+			<Kontakt id="kontakt" />
+		</div>
 		<Footer id="footer" />
 	</body>
 </html>
