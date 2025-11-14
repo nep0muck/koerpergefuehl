@@ -6,8 +6,9 @@ title: 'Datenschutzhinweise gem. EU-Datenschutzgrundverordnung'
 
 Im Folgenden möchten wir dich darüber informieren, wie in unserer Praxis deine personenbezogenen Daten verarbeitet werden und welche Rechte Dir nach den Datenschutzbestimmungen zustehen.
 
-## 1.	Verantwortlichkeiten und Ansprechpartner
-###    1.1 Wer ist für die Datenverarbeitung verantwortlich?
+## 1. Verantwortlichkeiten und Ansprechpartner
+
+### 1.1 Wer ist für die Datenverarbeitung verantwortlich?
 Deine Daten werden von dem folgenden Unternehmen verarbeitet. Wenn du Fragen zum Datenschutz hast, schreib an die unten stehende Adresse.
 
 **Physiotherapie Körpergefühl**  
@@ -26,24 +27,24 @@ Weitere Informationen findest du im [Impressum](https://physio-koerpergefuehl.de
 
 Beim Aufruf der Website werden durch dein Endgerät automatisch die folgenden Daten an unseren Server gesendet und zeitlich begrenzt in einer Protokolldatei (Logfile) gespeichert, wie z.B.
 
--   Name und URL der abgerufenen Datei
--   Datum und Uhrzeit des Abrufs
--   übertragene Datenmenge
--   Meldung über erfolgreichen Abruf
--   Browsertyp und -version
--   Betriebssystem
--   Bildschirmbreite und Auflösung
--   Vorher besuchte Website
--   Websites, die von Ihrem System über unsere Website aufgerufen werden
--   Internet-Service-Provider des Nutzers
--   IP-Adresse und der anfragende Provider
+- Name und URL der abgerufenen Datei
+- Datum und Uhrzeit des Abrufs
+- übertragene Datenmenge
+- Meldung über erfolgreichen Abruf
+- Browsertyp und -version
+- Betriebssystem
+- Bildschirmbreite und Auflösung
+- Vorher besuchte Website
+- Websites, die von Ihrem System über unsere Website aufgerufen werden
+- Internet-Service-Provider des Nutzers
+- IP-Adresse und der anfragende Provider
 
 Sofern du in deinem Browser die Programmiersprache JavaScript aktiviert hast, können auch weitere Informationen aus deinem Browser mit jedem Seitenaufruf ausgelesen werden, wie z.B.
 
--   JavaScript: ja / nein
--   Bildschirmauflösung, z. B. 1920 x 1080
--   Farbtiefe (z. B. 24 Bit)
--   Größe des Browserfensters (z. B. 1900 x 1000)
+- JavaScript: ja / nein
+- Bildschirmauflösung, z. B. 1920 x 1080
+- Farbtiefe (z. B. 24 Bit)
+- Größe des Browserfensters (z. B. 1900 x 1000)
 
 #### 2.1.2 Zwecke und Rechtsgrundlage der Verarbeitung
 
@@ -62,6 +63,7 @@ Für den Betrieb werden deine personenbezogenen Daten auf der Grundlage des [Ang
 Deine personenbezogenen Daten werden automatisch 4 Wochen nach dem Ende der Verbindung gelöscht.
 
 ### 2.2 Datenverarbeitung in unserer Praxis
+
 #### 2.2.1 Art und Umfang der Datenverarbeitung
 
 In unserer Physiopraxis verarbeiten wir deine personenbezogenen Daten, um eine professionelle und individuelle Betreuung zu gewährleisten. Zu den verarbeiteten Daten zählen:
@@ -88,9 +90,9 @@ Die Verarbeitung deiner Daten basiert auf den folgenden Rechtsgrundlagen:
 - Anbahnung und Durchführung des Behandlungsvertrages gem. Art. 6 Abs. 1 UAbs. 1 Buchst. b) DSGVO
 - Gesetzliche Pflichten zur Abrechnung und Aufbewahrung gem. Art. 6 Abs. 1 UAbs. 1 Buchst. c) DSGVO 
 - Berechtigtes Interesse unserer Praxis gem. Art. 6 Abs. 1 UAbs. 1 Buchst. f) DSGVO
-    - zur internen und externen Kommunikation mit dir und innerhalb unseres Teams
-    - zur Sicherstellung der Netz- und Informationssicherheit 
-    - zur Geltendmachung, Ausübung und Verteidigung von Rechtsansprüchen
+- zur internen und externen Kommunikation mit dir und innerhalb unseres Teams
+- zur Sicherstellung der Netz- und Informationssicherheit 
+- zur Geltendmachung, Ausübung und Verteidigung von Rechtsansprüchen
 - Verarbeitung deiner Gesundheitsdaten zur medizinischen Betreuung gem. Art. 9 Abs. 2 lit. h) DSGVO
 
 #### 2.2.3 Empfänger oder Kategorien von Empfängern
