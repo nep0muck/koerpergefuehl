@@ -1,20 +1,34 @@
 ---
-export interface Props {
-	title: string;
-	body: string;
-	time: string
-	href: string;
-}
-
-const { href, title, body, time } = Astro.props;
+import Card from "./Card.astro"
+import Zitat from "./Zitat.astro"
 ---
 
-<div class="grid md:grid-cols-2 grid-cols-1 mb-6">
-    <span class="font-bold mb-3">{title}</span>
-    <span class="">{time}</span>
-	<hr class="border-[theme('colors.green-medium')] md:col-span-2 md:mt-6 md:mb-3 mt-3 mb-0" />
-</div>
-
+<div class="max-w-3xl mx-auto">
+			<h2 class="text-2xl font-bold pb-9 text-center">Was kann <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> für mich tun?</h2>
+			<ul id="behandlungen" role="list" class="mb-9">
+				<Card
+					href="/"
+					title="Physiotherapie für alle Altersgruppen"
+					body="Bei uns geht es um dich und dein Wohlbefinden. Egal, in welcher Altersgruppe du dich befindest, unsere Physiotherapie deckt alles ab. Du kannst von klassischer Krankengymnastik, Manueller Lymphdrainage und klassischer Massage-Therapie profitieren. Doch das ist noch nicht alles. Zusätzlich zur herkömmlichen Physiotherapie bieten wir dir ergänzende Behandlungsmethoden wie den Schlingentisch und Rotlichttherapie an. Körpergefühl in Bremen kümmert sich um deine Gesundheit und dein Wohlbefinden, ganz gleich, wie alt du bist."
+				/>
+				<Card
+					href="/"
+					title="Heilpraktik für Dich"
+					body="Wenn es um Heilpraktik geht, sind wir für dich da. Wir verwenden chiropraktische Techniken, um deinem Körper die Behandlung zu geben, die er braucht. Und das Beste? Du kannst Akutbehandlungen bei uns erhalten, ohne dass ein Arzt dir eine Verordnung ausstellen muss. Deine Gesundheit ist unser Anliegen!"
+				/>
+				<Card
+					href="/"
+					title="Private Zusatzleistungen"
+					body="Du verdienst eine Extraportion Wohlbefinden. Bei uns kannst du dich verwöhnen lassen, sei es mit entspannenden Massagen, schmerzlinderndem Taping oder einer Muskelentspannung durch die Emmett Technique. Unser Ziel ist es, dir das Beste zu bieten. Gönn dir diese zusätzlichen Leistungen und fühl' dich großartig!"
+				/>
+			</ul>
+			<Zitat
+				body="Wir nehmen uns Zeit für Dich – damit Bewegung wieder leicht und schmerzarm möglich ist."
+			/>
+			<p>
+				Wir können mit allen gesetzlichen Krankenkassen, der Bundeswehr und der Berufsgenossenschaft (BG) abrechnen. Behandlungen privat Versicherter erfolgen über eine private Rechnung, die Du bei Deiner Versicherung einreichen kannst. Heilpraktische Leistungen werden privat abgerechnet; teilweise übernehmen private oder Zusatzversicherungen diese Kosten.
+			</p>
+		</div>
 
 <style>
 

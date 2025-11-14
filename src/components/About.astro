@@ -1,34 +1,58 @@
 ---
+import Zitat from './Zitat.astro';
+//import Image from './ImageComponent.astro';
+import { Image } from 'astro:assets';
+import image_cathrineichler from '../../src/img/cathrin-eichler.jpg';
 ---
 
-<div class="max-w-3xl mx-auto prose">
-    <h2 class="text-2xl font-bold pb-9 text-center">Das Team von <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span></h2>
-    <p>
-        Schön, dass du hier bist! Ich bin Cathrin Eichler, komme aus Bremen und
-arbeite seit 2010 als Physiotherapeutin. Schon während meiner Ausbildung
-(Fachschule für Physiotherapie der Bremer Heimstiftung) habe ich gemerkt,
-wie viel Freude es mir macht, Menschen dabei zu unterstützen, ihre
-Beweglichkeit zurückzugewinnen und mehr Lebensqualität in ihren Alltag zu
-bringen. Diese Freude an der Arbeit mit und für Menschen begleitet mich bis
-heute.
-Nach meinem Bachelorstudium in bio-psychosozialer Physiotherapie an der
-Hochschule Emden/Leer (2012) habe ich meinen Blick auf Körper, Geist und
-Alltag immer ganzheitlich geschärft. Mit der Heilpraktikererlaubnis, die ich
-2019 erhalten habe, konnte ich mein Behandlungsspektrum zusätzlich
-erweitern und dich noch individueller unterstützen.
-Fortbildungen in Chiropraktik, Pilates, Osteoporose-Training und
-Wassergymnastik haben meinen therapeutischen Werkzeugkasten stetig
-ergänzt. Besonders prägend war für mich meine Zeit bei der Rheuma-Liga
-Bremen: Von 2012 bis 2020 habe ich dort Wassergymnastik-Gruppen geleitet
-und erlebt, wie sehr regelmäßige Bewegung und Mobilität – neben den
-passiven Techniken der Physiotherapie – den Teilnehmenden neue Aktivität,
-Selbstständigkeit und Lebensfreude ermöglicht haben.
-Seit 2023 bin ich mit meiner eigenen Praxis, der Praxis für Physiotherapie
-Körpergefühl, selbstständig. Der Name ist für mich Programm: Ich glaube
-nicht, dass wir immer alle Beschwerden heilen können – aber ich bin
-überzeugt, dass jede*r mit einem besseren Körpergefühl, mehr Verständnis
-für die eigenen Möglichkeiten und einem klareren Bewusstsein für die eigene
-Selbstwirksamkeit den Alltag aktiver und lebenswerter gestalten kann. Genau
-dabei möchte ich dich unterstützen.
+<div class="max-w-3xl mx-auto">
+    <h2 class="text-2xl font-bold pb-9 text-center">Wer ist <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span>?</h2>
+    <Zitat class="mb-3"
+        body="Schön, dass du hier bist!"
+        />
+    <p class="mb-6 md:mb-9">
+        Ich bin Cathrin Eichler, komme aus Bremen und
+        arbeite seit 2010 als Physiotherapeutin. Schon während meiner Ausbildung
+        (Fachschule für Physiotherapie der Bremer Heimstiftung) habe ich gemerkt,
+        wie viel Freude es mir macht, Menschen dabei zu unterstützen, ihre
+        Beweglichkeit zurückzugewinnen und mehr Lebensqualität in ihren Alltag zu
+        bringen. Diese Freude an der Arbeit mit und für Menschen begleitet mich bis
+        heute.
+    </p>
+</div>
+<div class="grid md:grid-cols-3 gap-6 md:mb-9">
+    <Image
+        src={image_cathrineichler}
+        alt="Cathrin Eichler"
+        class="rounded-md md:col-span-2"
+    />
+    <div class="md:col-span-1">
+    <p class="mb-3">
+        Nach meinem Bachelorstudium in bio-psychosozialer Physiotherapie an der
+        Hochschule Emden/Leer (2012) habe ich meinen Blick auf Körper, Geist und
+        Alltag immer ganzheitlich geschärft. Mit der Heilpraktikererlaubnis, die ich
+        2019 erhalten habe, konnte ich mein Behandlungsspektrum zusätzlich
+        erweitern und dich noch individueller unterstützen.
+    </p>
+    <p class="mb-3">
+        Fortbildungen in Chiropraktik, Pilates, Osteoporose-Training und
+        Wassergymnastik haben meinen therapeutischen Werkzeugkasten stetig
+        ergänzt. Besonders prägend war für mich meine Zeit bei der Rheuma-Liga
+        Bremen: Von 2012 bis 2020 habe ich dort Wassergymnastik-Gruppen geleitet
+        und erlebt, wie sehr regelmäßige Bewegung und Mobilität – neben den
+        passiven Techniken der Physiotherapie – den Teilnehmenden neue Aktivität,
+        Selbstständigkeit und Lebensfreude ermöglicht haben.
+    </p>
+    </div>
+</div>
+    <div class="max-w-3xl mx-auto mb-12">
+    <p class="mb-3">
+        Seit 2023 bin ich mit meiner eigenen Praxis, der Praxis für Physiotherapie
+        Körpergefühl, selbstständig. Der Name ist für mich Programm: Ich glaube
+        nicht, dass wir immer alle Beschwerden heilen können – aber ich bin
+        überzeugt, dass jede*r mit einem besseren Körpergefühl, mehr Verständnis
+        für die eigenen Möglichkeiten und einem klareren Bewusstsein für die eigene
+        Selbstwirksamkeit den Alltag aktiver und lebenswerter gestalten kann. Genau
+        dabei möchte ich dich unterstützen.
     </p>
 </div>

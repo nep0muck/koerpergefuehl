@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "AshemoreNormRegular";
-    src:url('public/fonts/AshemoreNormRegular.otf') format("opentype");
+    src:url('/fonts/AshemoreNormRegular.otf') format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -12,7 +12,7 @@
 
 @font-face {
     font-family: "BrittanySignature-Regular";
-    src:url('public/fonts/BrittanySignature-Regular.otf') format("opentype");
+    src:url('/fonts/BrittanySignature-Regular.otf') format("opentype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;

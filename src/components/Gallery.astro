@@ -1,0 +1,29 @@
+---
+import ImageComponent from '../components/ImageComponent.astro';
+
+import image01 from '../assets/img/Physiopraxis_01.jpg';
+import image02 from '../assets/img/Physiopraxis_02.jpg';
+import image04 from '../assets/img/Physiopraxis_04.jpg';
+---
+
+<section class="max-w-screen-xl mx-auto mb-12">
+    <h2 class="text-2xl font-bold pb-9 text-center">Wie sieht es bei <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> aus?</h2>
+    <ul id="behandlungen" role="list" class="xl:grid xl:grid-cols-3 xl:gap-6">
+        <ImageComponent
+            src={image01}
+            title="So heißen wir dich willkommen"
+        />
+        <ImageComponent
+            src={image04}
+            title="Wohlfühlatmosphäre für deine Behandlung"
+        />
+        <ImageComponent
+            src={image02}
+            title="Hier werden unsere Kurse abgehalten"
+        />
+    </ul>
+</section>
+
+<style>
+
+</style>

@@ -4,15 +4,19 @@ import { Image } from 'astro:assets';
 export interface Props {
 	title: string;
 	src: string;
-    class?: string;
+    classes?: string;
     alt?: string;
 }
 
-const { title, src, class, alt } = Astro.props;
+const { title, src, classes, alt } = Astro.props;
 ---
 
 <li class="rounded-md list-none text-center bg-[theme('colors.green-light')] mb-6">
-	<Image class="rounded-t-md" src={src} alt={title} />
+	<Image
+        src={src}
+        alt={title}
+        class={classes}
+    />
     <p class="p-6">
         {title}
     </p>

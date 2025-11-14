@@ -6,9 +6,8 @@ export interface Props {
 const { body } = Astro.props;
 ---
 
-<div class="max-w-sm float-right mx-6 my-6 relative">
-	<p class="border-l-4 border-[theme('colors.green-medium')] px-6 italic text-2xl -mr-24">{body}</p>
-	<span class="text-7xl text-[theme('colors.green-medium')] absolute -top-4 -right-28">"</span>
+<div class="mx-auto mb-9 pl-6 py-3 relative border-l-4 border-[theme('colors.green-medium')] md:-mx-24">
+	<p class="italic text-2xl"><span class="text-[theme('colors.green-medium')] bold">"</span>{body}<span class="text-[theme('colors.green-medium')] bold">"</span></p>
 </div>
 <style>
 

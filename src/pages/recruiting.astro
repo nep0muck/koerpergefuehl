@@ -8,7 +8,7 @@ import { getEntries } from 'astro:content';
 
 //const jobs = Object.values(await import.meta.glob('../content/karriere/*.md', { eager: true }));
 
-const benefitsJob = await getEntries(job.frontmatter.benefits);
+//const benefitsJob = await getEntries(job.frontmatter.benefits);
 
 ---
 
@@ -35,7 +35,7 @@ const benefitsJob = await getEntries(job.frontmatter.benefits);
       </ul>
       <ul>
         <!-- {benefitsJob.map(job => <li>{job.frontmatter.benefits}</li>)} -->
-         {benefitsJob}
+         <!-- {benefitsJob} -->
       </ul>
     </div>
 		<div class="p-9 bg-[theme('colors.green-light')] rounded-lg">
