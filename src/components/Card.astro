@@ -8,15 +8,13 @@ export interface Props {
 const { href, title, body } = Astro.props;
 ---
 
-<li class="rounded-md list-none mb-6">
-		<p class="mb-3 text-xl text-center xl:text-left text-[theme('colors.green-light')]">---</p>
-		<h2 class="text-lg font-bold text-center xl:text-left text-[theme('colors.green-dark')] mb-3">
-			{title}
-		</h2>
-		<p class="px-6 py-3 xl:p-0 mb-3">
-			{body}
-		</p>
-</li>
+<p class="text-xl text-center xl:text-left text-[theme('colors.green-medium')]">---</p>
+<h2 class="text-lg font-bold text-center xl:text-left text-[theme('colors.green-dark')]">
+	{title}
+</h2>
+<p>
+	{body}
+</p>
 <style>
 
 </style>

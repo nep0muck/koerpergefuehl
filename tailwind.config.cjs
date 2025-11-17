@@ -11,6 +11,17 @@ module.exports = {
 				'green-medium': '#7aa79a',
 				'green-dark': '#1c4232',
 			},
+			typography: {
+				DEFAULT: {
+					css: {
+						color: 'colors.green-dark',
+						a: {
+							color: 'green-medium',
+							bg: 'green-dark'
+						}
+					}
+				}
+			}
 		},
 	},
 	plugins: [

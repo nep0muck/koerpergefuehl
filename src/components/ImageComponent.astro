@@ -11,16 +11,14 @@ export interface Props {
 const { title, src, classes, alt } = Astro.props;
 ---
 
-<li class="rounded-md list-none text-center bg-[theme('colors.green-light')] mb-6">
-	<Image
-        src={src}
-        alt={title}
-        class={classes}
-    />
-    <p class="p-6">
-        {title}
-    </p>
-</li>
+<Image
+    src={src}
+    alt={title}
+    class={classes}
+/>
+<p class="p-6">
+    {title}
+</p>
 <style>
 
 </style>

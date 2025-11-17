@@ -1,42 +1,43 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/BubbleCard.astro';
-import Kontakt from '../components/Kontakt.astro';
+import Nav from "../components/Nav.astro"
+import Hero from "../components/Hero.astro";
+import Leistungen from "../components/Leistungen.astro";
+import Gallery from '../components/Gallery.astro';
+import Team from '../components/Team.astro';
+import About from '../components/About.astro';
+import Kontakt from "../components/Kontakt.astro";
+import Footer from "../components/Footer.astro"
 
-const { frontmatter } = Astro.props;
 
-const { title, description, benefits, expecations } = frontmatter;
+export interface Props {
+	title: string;
+}
 
+const { title } = Astro.props;
+
+import '../../global.css';
 ---
 
-<Layout title="Recruiting">
-	<main class="max-w-screen-xl mx-auto p-6 mb-12 grid grid-cols-2 gap-6">
-    <div class="col-span-2">
-        <h1 class="text-2xl font-bold pb-9 text-center">Werde Teil des <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> Teams!</h1>
-        <h2 class="text-xl text-center">Du bist <span class="font-bold italic">Physiotherapeut/In?</span></h2>
-        <p class="text-center">Dann bewirb dich bei uns!</p>
-        <slot />
-    </div>
-    <div class="p-9 bg-[theme('colors.green-light')] rounded-lg">
-      <h2 class="text-2xl font-bold mb-3 logo-text-second">Das erwartet Dich:</h2>
-      <ul class="list-disc pl-6">
-        <li>Moderne und liebevoll eingerichtete Praxis</li>
-        <li>Besetzte Rezeption zur Unterstützung der Therapeuten</li>
-        <li>Familiäre Atmosphäre mit Praxishund</li>
-        <li>Kommunikation auf Augenhöhe unter den Kollegen und mit unseren Patienten</li>
-      </ul>
-    </div>
-		<div class="p-9 bg-[theme('colors.green-light')] rounded-lg">
-      <h2 class="text-2xl font-bold mb-3 logo-text-second">Benefits</h2>
-      <ul class="list-disc pl-6">
-        <li>30 Tage Urlaub im Jahr</li>
-        <li>Attraktives Gehalt nach Qualifikation und Engagement</li>
-        <li>Finanzielle Unterstützung bei Fortbildungen</li>
-        <li>Betriebliche Altersvorsorge</li>
-        <li>Regelmäßige Teamsitzungen</li>
-        <li>Digitale Dokumentation mit iPad</li>
-      </ul>
-    </div>
-	</main>
-	<Kontakt id="kontakt" />
-</Layout>
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="text-[theme('colors.green-dark')] accent-[theme('colors.green-medium')] ">
+		<Nav />
+		<div class="max-w-screen-xl mx-auto mb-24 px-6 md:px-0">
+			<slot />
+		</div>
+		<div class="max-w-screen-xl mx-auto mb-24 px-6 md:px-0">
+			<Kontakt id="kontakt" />
+		</div>
+		<Footer id="footer" />
+	</body>
+</html>
+<style>
+</style>

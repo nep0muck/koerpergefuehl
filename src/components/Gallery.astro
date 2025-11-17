@@ -8,19 +8,28 @@ import image04 from '../assets/img/Physiopraxis_04.jpg';
 
 <section class="max-w-screen-xl mx-auto mb-12">
     <h2 class="text-2xl font-bold pb-9 text-center">Wie sieht es bei <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> aus?</h2>
-    <ul id="behandlungen" role="list" class="xl:grid xl:grid-cols-3 xl:gap-6">
-        <ImageComponent
-            src={image01}
-            title="So heißen wir dich willkommen"
-        />
-        <ImageComponent
-            src={image04}
-            title="Wohlfühlatmosphäre für deine Behandlung"
-        />
-        <ImageComponent
-            src={image02}
-            title="Hier werden unsere Kurse abgehalten"
-        />
+    <ul id="behandlungen" role="list" class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:p-0">
+        <li class="rounded-md list-none text-center bg-[theme('colors.green-light')]">
+            <ImageComponent
+                src={image01}
+                title="So heißen wir dich willkommen"
+                classes="rounded-t-md"
+            />
+        </li>
+        <li class="rounded-md list-none text-center bg-[theme('colors.green-light')]">
+            <ImageComponent
+                src={image04}
+                title="Wohlfühlatmosphäre für deine Behandlung"
+                classes="rounded-t-md"
+            />
+        </li>
+        <li class="rounded-md list-none text-center bg-[theme('colors.green-light')]">
+            <ImageComponent
+                src={image02}
+                title="Hier werden unsere Kurse abgehalten"
+                classes="rounded-t-md"
+            />
+        </li>
     </ul>
 </section>
 
