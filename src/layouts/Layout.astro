@@ -1,4 +1,5 @@
 ---
+import HeadComponent from "../components/HeadComponent.astro";
 import Nav from "../components/Nav.astro"
 import Hero from "../components/Hero.astro";
 import Leistungen from "../components/Leistungen.astro";
@@ -21,12 +22,7 @@ import '../../global.css';
 <!DOCTYPE html>
 <html lang="de">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<HeadComponent title={title} />
 	</head>
 	<body class="text-[theme('colors.green-dark')] accent-[theme('colors.green-medium')] prose-headings:text-[theme('colors.green-dark')]">
 		<Nav />
