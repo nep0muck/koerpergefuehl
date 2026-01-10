@@ -14,16 +14,16 @@ const { href, title, body, id } = Astro.props;
 ---
 
 <div id={id} class="flex items-center justify-center mb-12">
-    <div class="max-w-screen-xl w-screen mx-auto text-center">
+    <div class="max-w-screen-2xl w-screen mx-auto text-center">
         <h2 class="text-2xl font-bold pb-9">Wie komme ich zu <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span>?</h1>
         <div class="rounded-md h-96 w-full bg-cover bg-center bg-no-repeat mb-9" style={`background-image: url('${optimizedBackgroundImage.src}')`} />
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-3xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-screen-lg mx-auto">
             <div class="lg:col-span-3 pb-6">
                 <p class="">
                     Öffentliche Parkplätze findest Du direkt an der Straße, und die Bushaltestelle <strong>Brünsweg</strong> liegt nur 50 m entfernt – so erreichst Du uns bequem mit dem Auto oder den öffentlichen Verkehrsmitteln.
                 </p>
             </div>
-            <div class="pb-6">
+            <div class="pb-6 text-left">
                 <h3 class="text-lg pb-3 font-bold">Adresse</h3>
                 <address class="pb-3 not-italic">
                     Hemelinger Heerstr. 50<br />
@@ -36,13 +36,21 @@ const { href, title, body, id } = Astro.props;
                     </a>
                 </p>
             </div>
-            <div class="pb-6">
+            <div class="pb-6 text-left">
                 <h3 class="text-lg pb-3 font-bold">Telefon</h3>
                 <p><a class="underline hover:text-[theme('colors.green-medium')]" href="tel:+4942198964633">+49 (0)421 - 98 96 46 33</a></p>
+                <h3 class="text-lg pb-3 pt-6 font-bold">E-Mail</h3>
+                <p><a class="underline hover:text-[theme('colors.green-medium')]" href="mailto:mail@physio-koerpergefuehl.de">mail@physio-koerpergefuehl.de</a></p>
             </div>
-            <div>
+            <div class="text-left">
                 <h3 class="text-lg pb-3 font-bold">Öffnungszeiten</h3>
-                <p>Nach Vereinbarung</p>
+                <div class="grid grid-cols-2">
+                <p>Montag</p><p>08:00-17:00 Uhr</p>
+                <p>Dienstag</p><p>08:00-15:30 Uhr</p>
+                <p>Mittwoch</p><p>07:00-14:00 Uhr</p>
+                <p>Donnerstag</p><p>08:00-17:00 Uhr</p>
+                <p>Freitag</p><p>07:00-14:00 Uhr</p>
+                </div>
             </div>
         </div>
     </div>

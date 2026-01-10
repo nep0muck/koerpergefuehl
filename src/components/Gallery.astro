@@ -1,33 +1,62 @@
 ---
 import ImageComponent from '../components/ImageComponent.astro';
 
-import image01 from '../assets/img/Physiopraxis_01.jpg';
-import image02 from '../assets/img/Physiopraxis_02.jpg';
-import image04 from '../assets/img/Physiopraxis_04.jpg';
+import image05 from '../assets/img/physiopraxis_05.jpg';
+import image06 from '../assets/img/physiopraxis_06.jpg';
+import image07 from '../assets/img/physiopraxis_07.jpg';
+import image08 from '../assets/img/physiopraxis_08.jpg';
+import image09 from '../assets/img/physiopraxis_09.jpg';
+import image10 from '../assets/img/physiopraxis_10.jpg';
 ---
 
 <section class="max-w-screen-xl mx-auto mb-12">
     <h2 class="text-2xl font-bold pb-9 text-center">Wie sieht es bei <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span> aus?</h2>
+    <div class="max-w-3xl mx-auto mb-12 prose">
+        <p class="mb-3">
+            In unseren hellen, großzügigen Räumen erwartet Dich ein freundliches Team, das mit Fachwissen, Empathie und echter Freude an der Arbeit für Deine körperliche Gesundheit da ist.
+        </p>
+    </div>
     <ul id="behandlungen" role="list" class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:p-0">
-        <li class="rounded-md list-none text-center bg-[theme('colors.green-light')]">
+        <li class="rounded-md list-none text-center bg-green-light">
             <ImageComponent
-                src={image01}
-                title="So heißen wir dich willkommen"
-                classes="rounded-t-md"
+                src={image05}
+                alt=""
+                classes="rounded-md"
             />
         </li>
-        <li class="rounded-md list-none text-center bg-[theme('colors.green-light')]">
+        <li class="rounded-md list-none text-center bg-green-light">
             <ImageComponent
-                src={image04}
-                title="Wohlfühlatmosphäre für deine Behandlung"
-                classes="rounded-t-md"
+                src={image06}
+                alt=""
+                classes="rounded-md"
             />
         </li>
-        <li class="rounded-md list-none text-center bg-[theme('colors.green-light')]">
+        <li class="rounded-md list-none text-center bg-green-light">
             <ImageComponent
-                src={image02}
-                title="Hier werden unsere Kurse abgehalten"
-                classes="rounded-t-md"
+                src={image07}
+                alt=""
+                classes="rounded-md"
+            />
+        </li>
+        <li class="rounded-md list-none text-center bg-green-light">
+            <ImageComponent
+                src={image08}
+                alt=""
+                classes="rounded-md"
+            />
+        </li>
+        <li class="rounded-md list-none text-center bg-green-light">
+            <ImageComponent
+                src={image09}
+                alt=""
+                classes="rounded-md"
+            />
+        </li>
+        <li class="rounded-md list-none text-center bg-green-light">
+            <ImageComponent
+                src={image10}
+                alt=""
+                classes="rounded-md"
             />
         </li>
     </ul>

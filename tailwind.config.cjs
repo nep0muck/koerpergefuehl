@@ -7,9 +7,16 @@ module.exports = {
 				'sand': '#f4eacf',
 				'sand-dark': '#dccba9',
 				'pink': '#dccba9',
+				'green-light_orig': '#d6e1d9',
 				'green-light': '#d6e1d9',
 				'green-medium': '#7aa79a',
 				'green-dark': '#1c4232',
+				'beige-light': '#f4eacf',
+				'beige-dark': '#dccba9',
+				'magenta': 'rgb(182,0,75)',
+				'oldrose': '#A66A65',
+				'mauvebark': '#60463B',
+
 			},
 			typography: {
 				DEFAULT: {

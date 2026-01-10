@@ -6,13 +6,15 @@ import Zitat from './Zitat.astro';
 const optimizedBackgroundImage = await getImage({ src: LogoHalf })
 ---
 
-<div class="flex items-center justify-center bg-contain bg-no-repeat bg-right w-full min-h-96 mb-12" style={`background-image: url('${optimizedBackgroundImage.src}')`}>
+<div class="flex items-center justify-center bg-contain bg-no-repeat bg-right w-full min-h-96 h-screen -mt-[176px]" style={`background-image: url('${optimizedBackgroundImage.src}')`}>
     <div class="max-w-screen-xl mx-auto p-6 pb-12 text-center">
-         <Zitat
+<!--          <Zitat
             body="Was wäre, wenn Therapie nicht nur Beschwerden lindert, sondern dir auch neue Möglichkeiten eröffnet?"
-        />
-        <h1 class="text-5xl font-bold pt-12 pb-24">Willkommen bei <span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span></h1>
-        <button class="border-2 rounded-md border-[theme('colors.green-medium')] bg-[theme('colors.green-light')] text-[theme('colors.green-dark')] hover:bg-[theme('colors.green-medium')] hover:text-white font-bold text-lg px-6 py-3 mb-9"><a href="#kontakt">Vereinbare jetzt einen Termin bei uns</a></button>
+        /> -->
+        <span class="text-3xl text- pt-12"><span class="logo-text-first">Praxis für Physiotherapie</span></span>
+        <h1 class="text-5xl md:text-9xl font-bold pb-24 md:pb-48"><span class="logo-text-first">Körper</span><span class="logo-text-second">gefühl</span></h1>
+        <!-- <button class="border-2 rounded-md border-[theme('colors.green-medium')] bg-[theme('colors.green-light')] text-[theme('colors.green-dark')] hover:bg-[theme('colors.green-medium')] hover:text-white font-bold text-lg px-6 py-3 mb-9"><a href="#kontakt">Vereinbare jetzt einen Termin bei uns</a></button> -->
+        <button class="mt-12 rounded-full bg-green-light hover:bg-fuchsia-800 hover:text-white border-0 border-green-medium py-6 px-9 shadow-md font-bold"><a href="#kontakt">Vereinbare jetzt einen Termin bei uns</a></button>
     </div>
 </div>
 

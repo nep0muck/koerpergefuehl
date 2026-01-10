@@ -2,7 +2,7 @@
 import { Image } from 'astro:assets';
 
 export interface Props {
-	title: string;
+	title?: string;
 	src: string;
     classes?: string;
     alt?: string;
@@ -13,12 +13,13 @@ const { title, src, classes, alt } = Astro.props;
 
 <Image
     src={src}
-    alt={title}
+    alt={alt}
     class={classes}
 />
+<!-- 
 <p class="p-6">
     {title}
-</p>
+</p> -->
 <style>
 
 </style>
